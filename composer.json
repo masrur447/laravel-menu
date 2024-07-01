@@ -1,0 +1,44 @@
+{
+    "name": "bdacademy/laravel-menu",
+    "description": "Drag & Drop menu builder like  WordPress for Laravel 11.x",
+    "keywords": ["Laravel", "Menu", "Wordpress", "Builder"],
+    "homepage": "https://github.com/masrur447/laravel-menu",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": ":Muhammad Eyaheya",
+            "email": "m.masrur.official@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bdacademy\\LaravelMenu\\": "src/",
+            "Bdacademy\\LaravelMenu\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bdacademy\\LaravelMenu\\LaravelMenuServiceProvider"
+            ],
+            "aliases": {
+                "LaravelMenu": "Bdacademy\\LaravelMenu\\Facades\\LaravelMenu"
+            }
+        }
+    },
+    "prefer-stable": true
+}
