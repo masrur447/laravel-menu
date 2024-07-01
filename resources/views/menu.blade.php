@@ -2,10 +2,10 @@
 $currentUrl = url()->current();
 
 $post_name = config('menu.post.name');
-$post_url = config('menu.post.url');
+$post_url = config('menu.post.prefix');
 
 $cat_name = config('menu.category.name');
-$cat_url = config('menu.category.url');
+$cat_url = config('menu.category.prefix');
 ?>
 <link href="{{ asset('vendor/laravel-menu/style.css') }}" rel="stylesheet">
 <div id="hwpwrap">
